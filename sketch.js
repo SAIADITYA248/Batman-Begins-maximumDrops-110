@@ -7,10 +7,9 @@ var engine, world;
 var drops = [];
 var rand;
 
-var maxDrops=100;
-
+var maxDrops=110;
 var thunderCreatedFrame=0;
-
+ 
 function preload(){
     thunder1 = loadImage("thunderbolt/1.png");
     thunder2 = loadImage("thunderbolt/2.png");
@@ -19,6 +18,7 @@ function preload(){
 }
 
 function setup(){
+    createCanvas(600,1000);
     engine = Engine.create();
     world = engine.world;
 
